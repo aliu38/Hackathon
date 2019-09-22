@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find Time with Friends</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/templates/styles.css">
+
+		<script type="text/javascript" src="/templates/addons/jquery/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <section class = "setHeight">
+      <ul>
+        <li><a href = "about.html" class = "nav">ABOUT</a></li>
+        <li><a href = "contact.html" class = "nav">CONTACT</a></li>
+        <li><a href = "index.html" class = "nav">FIND TIME</a></li>
+      </ul>
+    </section>
+    <!--<p>Google Calendar API Quickstart</p>-->
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+
+    <script type="text/javascript" src = "/templates/code.js">
+    </script>
+
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+    <div class = "clear"></div>
+    <div class = "storePicture">
+      <a href = "picGenerate.html">
+        <img src = "bigButton.png" alt = "bigButton">
+      </a>
+    </div>
+  </body>
+</html>
